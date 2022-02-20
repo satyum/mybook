@@ -125,3 +125,53 @@ int main()
 	
 }
 ```
+## sort negative and positive
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	int n;
+	cin>>n;
+	vector<int>arr(n);
+	for(int i=0;i<n;++i)
+		{
+			cin>>arr[i];
+		}
+	int l=0,r=n-1;
+	while(l<r)
+	{
+		if(arr[l]<0 && arr[r]<0) l++;
+		
+		else if(arr[l]>0 && arr[r]>0) r--;
+		
+		else if(arr[l]>0 && arr[r]<0)
+		{
+				swap(arr[l++],arr[r--]);
+		}else
+		{
+			l++;
+			r--;	
+		}
+		
+	}
+	for(int i=0;i<n;++i)
+		{
+			cout<<arr[i];
+		}
+}
+```
+## cyclic rotate
+```c++
+
+void rotate(int arr[], int n)
+{
+    int left=0,right=n-1;
+    while(left<right)
+    {
+        swap(arr[left],arr[right]);
+        left++;
+    }
+```
