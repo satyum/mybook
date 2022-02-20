@@ -1,6 +1,7 @@
 # mybook
 
 #reverse an array
+```c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +18,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 # reverse a  string
 ```c++
     #include<bits/stdc++.h>
