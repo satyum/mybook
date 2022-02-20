@@ -87,12 +87,11 @@ int main() {
      return 0;
     }
 ```
-
+##  sort 0 1 2 
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
 
-# sort 0 1 2 
 int main()
 {
 	int n;
